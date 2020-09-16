@@ -18,6 +18,10 @@
     float: left
 }
 
+@media screen and (max-width:600px) {
+    .nav-item {float: none}
+}
+
 .nav-link-home {
     display: block;
     color: orange;
