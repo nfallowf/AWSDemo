@@ -1,12 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
-import { API, Storage } from 'aws-amplify'
-import { listTodos } from './graphql/queries'
-import { createTodo as createNoteMutation, deleteTodo as deleteNoteMutation } from './graphql/mutations'
+import Navbar from './Navbar'
+//import { API, Storage } from 'aws-amplify'
+//import { listTodos } from './graphql/queries'
+//import { createTodo as createNoteMutation, deleteTodo as deleteNoteMutation } from './graphql/mutations'
 
-const initialFromState = { name:'', description: ''}
+
+function App() {
+    return (
+        <div className="App">
+          <header>
+            <Navbar/>
+          </header>
+        </div>
+  );
+}
+/*const initialFromState = { name:'', description: ''}
 function App() {
   const [notes, setNotes] = useState([])
   const [formData, setFormData] = useState(initialFromState)
@@ -88,5 +97,5 @@ function App() {
     </div>
   );
 }
-
-export default withAuthenticator(App);
+*/
+export default App;
