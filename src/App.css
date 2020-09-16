@@ -1,1 +1,23 @@
+.App {
 
+}
+
+.homepage-container {
+    position: absolute;
+    margin: auto;
+    background-image: url('/home-background.jpg');
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content {
+    color: white;
+    text-align: center
+}
