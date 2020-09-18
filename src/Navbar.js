@@ -1,49 +1,60 @@
 import React from 'react'
-import Login from './Login'
+import ReactDOM from 'react-dom'
+import { BrowserRouter as Router, Route, Link, NavLink } from 'react-router-dom'
+import { CSSTransition } from 'react-transition-group'
+import { Container, Navbar, Nav } from 'react-bootstrap'
 import Home from './Home'
-import Projects from './Projects'
-import Resume from './Resume'
 import About from './About'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import Resume from './Resume'
+import Projects from './Projects'
 import './Navbar.css'
 
-function Navbar() {
-    return (
-        <Router>
-            <div className='nav-container'>
-                <nav className='nav'>
-                    <ul className='nav-item-container'>
-                        <li className='nav-item'>
-                            <Link to='/' className='nav-link-home'>Home</Link>
-                        </li>
-                        <li className='nav-item'>
-                            <Link to='/about' className='nav-link'>About</Link>
-                        </li>
-                        <li className='nav-item'>
-                            <Link to='/resume' className='nav-link'>Resume</Link>
-                        </li>
-                        <li className='nav-item'>
-                            <Link to='/projects' className='nav-link'>Projects</Link>
-                        </li>
-                    </ul>
-                </nav>
-                <Switch>
-                    <Route exact path='/'>
-                        <Home/>
-                    </Route>
-                    <Route path='/about'>
-                        <About/>
-                    </Route>
-                    <Route path='/resume'>
-                        <Resume/>
-                    </Route>
-                    <Route path='/projects'>
-                        <Projects/>
-                    </Route>
-                </Switch>
-            </div>
-        </Router>
-    )
-}
+const routes = [
+  { path: '/', name: 'Home', Component: Home },
+  { path: '/about', name: 'About', Component: About },
+  { path: '/resume', name: 'Resume', Component: Resume },
+  { path: '/projects', name: 'Projects', Component: Projects },
+]
 
-export default Navbar
+function Header() {
+  return (
+    <Router>
+      <>
+        <Navbar bg="dark">
+          <Nav className="mx-auto nav-container">
+            {routes.map(route => (
+              <Nav.Link
+                key={route.path}
+                as={NavLink}
+                to={route.path}
+                activeClassName="active"
+                exact
+              >
+                {route.name}
+              </Nav.Link>
+            ))}
+          </Nav>
+        </Navbar>
+        <Container className="container">
+          {routes.map(({ path, Component }) => (
+            <Route key={path} exact path={path}>
+              {({ match }) => (
+                <CSSTransition
+                  in={match != null}
+                  timeout={300}
+                  classNames="page"
+                  unmountOnExit
+                >
+                  <div className="page">
+                    <Component />
+                  </div>
+                </CSSTransition>
+              )}
+            </Route>
+          ))}
+        </Container>
+      </>
+    </Router>
+  )
+}
+export default Header

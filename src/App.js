@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Navbar from './Navbar'
+import Header from './Navbar'
 //import { API, Storage } from 'aws-amplify'
 //import { listTodos } from './graphql/queries'
 //import { createTodo as createNoteMutation, deleteTodo as deleteNoteMutation } from './graphql/mutations'
@@ -9,7 +9,7 @@ import Navbar from './Navbar'
 function App() {
     return (
         <div className="App">
-            <Navbar/>
+            <Header/>
         </div>
   );
 }
