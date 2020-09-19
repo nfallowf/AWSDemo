@@ -15,7 +15,7 @@
 .page-enter-active {
     opacity: 1;
 
-    transition: opacity 300ms;
+    transition: opacity 1000ms;
 }
 
 .page-exit {
@@ -24,5 +24,5 @@
 
 .page-exit-active {
     opacity: 0;
-    transition: opacity 300ms;
+    transition: opacity 1000ms;
 }
