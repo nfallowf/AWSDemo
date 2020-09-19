@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from './Navbar'
+import 'bootstrap/dist/css/bootstrap.min.css'
 //import { API, Storage } from 'aws-amplify'
 //import { listTodos } from './graphql/queries'
 //import { createTodo as createNoteMutation, deleteTodo as deleteNoteMutation } from './graphql/mutations'
