@@ -21,7 +21,7 @@ function Header() {
   return (
     <Router>
       <>
-        <Navbar bg="light">
+        <Navbar bg="dark" variant="dark">
           <Nav className="mx-auto">
             {routes.map(route => (
               <Nav.Link
