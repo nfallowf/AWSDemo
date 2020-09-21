@@ -8,6 +8,7 @@ import About from './About'
 import Resume from './Resume'
 import Projects from './Projects'
 import './Navbar.css'
+import Footer from './Footer'
 
 const routes = [
   { path: '/', name: 'Home', Component: Home },
@@ -35,7 +36,7 @@ function Header() {
             ))}
           </Nav>
         </Navbar>
-        <Container className="container">
+        <div>
           {routes.map(({ path, Component }) => (
             <Route key={path} exact path={path}>
               {({ match }) => (
@@ -47,12 +48,13 @@ function Header() {
                 >
                   <div className="page">
                     <Component />
+                    {path !=="/" && <Footer/>}
                   </div>
                 </CSSTransition>
               )}
             </Route>
           ))}
-        </Container>
+        </div>
       </>
     </Router>
   )

@@ -11,7 +11,7 @@ function Resume() {
                     <p>{point.time}</p>
                     </div>
                     <div className='rcontainer'>
-                    <p>{point.title}</p>
+                    <p><b>{point.title}</b></p>
                     <p>{point.description}</p>
                     </div>
                 </div>
@@ -27,7 +27,7 @@ function Resume() {
     return(
         <>
             <div className='resume-container'>
-                <div className='top-section'>
+                <div id='resume-title'>
                     <h1>Resume</h1>
                 </div>
                 {sections}

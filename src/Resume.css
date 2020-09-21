@@ -5,8 +5,8 @@
     align-items: center;
     padding: 25px;
 }
-.top-section {
-    height: 20vh;
+#resume-title {
+    height: 10vh;
     width: 100%;
     border-style: none none solid none;
     border-width: thin;
@@ -31,6 +31,7 @@
 
 #Experience {
     width: 100%;
+    background-color: Beige;
 }
 
 #Skills {

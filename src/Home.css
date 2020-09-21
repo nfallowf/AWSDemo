@@ -1,0 +1,9 @@
+.home-container {
+    background-image: url('/home-background.jpg');
+    text-align: center;
+    color: white;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}

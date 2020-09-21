@@ -4,7 +4,7 @@ function About() {
     return (
         <>
             <div className="about-container">
-                <div className="top-section">
+                <div id="about-title">
                     <h1>Profile</h1>
                     <h3>I'm a Frontend/React developer</h3>
                 </div>
@@ -14,7 +14,9 @@ function About() {
                         <p>I'm a front end web developer with experience designing and building front end web apps using react</p>
                     </div>
                     <div className="section-detail">
-                        <p>Image here</p>
+                        <div id="selfie-container">
+                            <img id="selfie" src='/resumeselfie.jpg'/>
+                        </div>
                     </div>
                     <div className="section-detail">
                         <h3>Details</h3>

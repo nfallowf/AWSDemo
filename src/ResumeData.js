@@ -23,17 +23,17 @@ const ResumeData = [
       "Experience": [
         {
             "id": 3,
-            "name": "University of Western Ontario",
-            "title": "Bachelor of Computer Science (Honours Specialization)",
-            "time": "September 2015 - April 2019",
-            "description": "During my time in university I gained an experience using a variety of languages and technologies"
+            "name": "Aluminum Associates",
+            "title": "Warehouse Assistant",
+            "time": "May 2018 - Present",
+            "description": "As a warehouse assistant I was resposible for the manufacturing of home exterior products. I was also responsible for providing customer service, and helping clients find the products they need."
         },
         {
             "id": 4,
-            "name": "University of Western Ontario",
-            "title": "Bachelor of Computer Science (Honours Specialization)",
-            "time": "September 2015 - April 2019",
-            "description": "During my time in university I gained an experience using a variety of languages and technologies"
+            "name": "MMD Data",
+            "title": "Junior Software Developer",
+            "time": "January 2016 - September 2017",
+            "description": "As a junior developer I was responsible for contributing to and maintaining and EMR web app written in PHP."
         }
       ]
     },
