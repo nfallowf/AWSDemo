@@ -1,0 +1,38 @@
+.resume-container {
+    display:flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+.top-section {
+    height: 20vh;
+    width: 100%;
+    border-style: none none solid none;
+    border-width: thin;
+    text-align: center;
+}
+
+.mcontainer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+.lcontainer {
+    width: 33%;
+}
+.rcontainer {
+    width: 67%;
+}
+
+#Education {
+    width: 100%;
+}
+
+#Experience {
+    width: 100%;
+}
+
+#Skills {
+    width: 100%;
+}
