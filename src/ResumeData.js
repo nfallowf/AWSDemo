@@ -36,25 +36,6 @@ const ResumeData = [
             "description": "As a junior developer I was responsible for contributing to and maintaining and EMR web app written in PHP."
         }
       ]
-    },
-    {
-      "Title": "Skills",
-      "Skills": [
-        {
-            "id": 5,
-            "name": "University of Western Ontario",
-            "title": "Bachelor of Computer Science (Honours Specialization)",
-            "time": "September 2015 - April 2019",
-            "description": "During my time in university I gained an experience using a variety of languages and technologies"
-        },
-        {
-            "id": 6,
-            "name": "University of Western Ontario",
-            "title": "Bachelor of Computer Science (Honours Specialization)",
-            "time": "September 2015 - April 2019",
-            "description": "During my time in university I gained an experience using a variety of languages and technologies"
-        }
-      ]
     }
 ]
 
