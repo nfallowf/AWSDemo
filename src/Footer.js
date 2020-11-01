@@ -1,3 +1,4 @@
+//Author Nathan Fallowfield
 import React from 'react'
 import './Footer.css'
 function Footer() {
