@@ -4,14 +4,21 @@ function Footer() {
     return (
         <>
             <div className='footer-container bg-dark'>
-                <div id="footer-title">
-                    <h1>Contact Me</h1>
-                </div>
-                <div id='footer-contacts-container'>
-                    <p>nate@natefallowfield.com</p>
-                    <p>Facebook</p>
-                    <p>Linkedin</p>
-                </div>
+              <div id="footer-title">
+                  <h1>Contact Me</h1>
+                  <p>“Every mind needs friendly
+                  contact with other minds, for
+                  food of expansion and growth.”
+                  — Napoleon Hill
+                  </p>
+              </div>
+              <div id='footer-contacts-container'>
+                <ul id='contactlist'>
+                  <li>nate@natefallowfield.com</li>
+                  <li>Facebook</li>
+                  <li>Linkedin</li>
+                </ul>
+              </div>
             </div>
         </>
     )

@@ -1,5 +1,6 @@
 import React from 'react'
 import ResumeData from './ResumeData'
+import SkillsData from './SkillsData'
 import './Resume.css'
 function Resume() {
     const sections = ResumeData.map(item => {
@@ -7,12 +8,12 @@ function Resume() {
             return (
                 <div key={point.id}className='mcontainer'>
                     <div className='lcontainer'>
-                    <p><b>{point.name}</b></p>
-                    <p>{point.time}</p>
+                      <p><b>{point.name}</b></p>
+                      <p>{point.time}</p>
                     </div>
                     <div className='rcontainer'>
-                    <p><b>{point.title}</b></p>
-                    <p>{point.description}</p>
+                      <p><b>{point.title}</b></p>
+                      <p>{point.description}</p>
                     </div>
                 </div>
             )
@@ -24,6 +25,22 @@ function Resume() {
             </div>
         )
     })
+
+    const skillcategories = SkillsData.map(skillcategory => {
+      const skills = skillcategory['skills'].map(skill => {
+        return (
+          <li id={skill.id}>{skill.name}</li>
+        )
+      })
+      return(
+        <div id={skillcategory.title}>
+          <p><b>{skillcategory.title}</b></p>
+          <ul>
+            {skills}
+          </ul>
+        </div>
+      )
+    })
     return(
         <>
             <div className='resume-container'>
@@ -31,6 +48,10 @@ function Resume() {
                     <h1>Resume</h1>
                 </div>
                 {sections}
+                <div id='Skills'>
+                  <h3>Skills</h3>
+                  {skillcategories}
+                </div>
             </div>
         </>
     )

@@ -26,6 +26,14 @@
 .section-detail {
     width: 30%;
 }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .section-details {
+    width: 100%;
+  }
+}
+
 #selfie-container {
     width: 100%;
 }

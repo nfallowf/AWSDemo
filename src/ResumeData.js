@@ -7,7 +7,7 @@ const ResumeData = [
             "name": "University of Western Ontario",
             "title": "Bachelor of Computer Science (Honours Specialization)",
             "time": "September 2015 - April 2019",
-            "description": "During my time in university I gained an experience using a variety of languages and technologies including: java, c, OOP, SQL, python and more. I learned how to solve problems using algorithms, and create asthetic user interfaces"
+            "description": "During my time in university I gained an experience using a variety of languages and technologies including: java, c, OOP, SQL, python and more. I learned how to solve problems using algorithms, and create aesthetic user interfaces"
         },
         {
             "id": 2,
