@@ -1,6 +1,6 @@
 .about-container {
     display:flex;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -16,11 +16,12 @@
 }
 
 .bottom-section {
-    height: 80%;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: space-around;
     padding: 10px;
+    margin:auto;
 }
 
 .section-detail {
@@ -29,11 +30,24 @@
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-  .section-details {
+  .section-detail {
     width: 100%;
   }
 }
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .bottom-section {
+    flex-direction: column;
+  }
+}
 
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #selfie {
+    width: 125px !important;
+    height: 150px !important;
+  }
+}
 #selfie-container {
     width: 100%;
 }

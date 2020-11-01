@@ -6,7 +6,7 @@ function About() {
             <div className="about-container">
                 <div id="about-title">
                     <h1>Profile</h1>
-                    <h3>I'm a Frontend/React developer</h3>
+                    <h4>I'm a Fullstack Web Developer</h4>
                 </div>
                 <div className="bottom-section">
                     <div className="section-detail">
